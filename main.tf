@@ -13,7 +13,7 @@ resource "aws_subnet" "main" {
   )}"
 }
 
-resource "aws_main_route_table_association" "main" {
-  vpc_id         = "${var.vpc-id}"
+resource "aws_route_table_association" "main" {
+  subnet_id      = "${aws_subnet.main.id}"
   route_table_id = "${var.rt-id}"
 }
