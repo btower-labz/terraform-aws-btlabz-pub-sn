@@ -1,2 +1,3 @@
-# terraform-aws-vpc
-AWS Proper VPC
+# BT-Labz AWS VPC parts.
+## Public subnet module.
+
