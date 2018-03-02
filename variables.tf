@@ -1,4 +1,4 @@
-variable "vpc-id" {
+variable "vpc_id" {
   description = "VPC identifier to create the subnet in."
   type        = "string"
 }
@@ -13,7 +13,7 @@ variable "az" {
   type        = "string"
 }
 
-variable "rt-id" {
+variable "rt_id" {
   description = "Public route table to bind subnet to."
   type        = "string"
 }

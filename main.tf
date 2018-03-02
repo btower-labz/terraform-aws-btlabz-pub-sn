@@ -1,5 +1,5 @@
 resource "aws_subnet" "main" {
-  vpc_id                          = "${var.vpc-id}"
+  vpc_id                          = "${var.vpc_id}"
   cidr_block                      = "${var.cidr}"
   availability_zone               = "${var.az}"
   map_public_ip_on_launch         = true
@@ -15,5 +15,5 @@ resource "aws_subnet" "main" {
 
 resource "aws_route_table_association" "main" {
   subnet_id      = "${aws_subnet.main.id}"
-  route_table_id = "${var.rt-id}"
+  route_table_id = "${var.rt_id}"
 }

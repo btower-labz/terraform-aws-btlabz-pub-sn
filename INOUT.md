@@ -8,9 +8,9 @@
 | az | Subnet's availability zone. | string | - | yes |
 | cidr | Subnet's CIDR range. | string | - | yes |
 | name | Subnet name. Will be used as the 'Name' tag value. | string | `public-subnet` | no |
-| rt-id | Public route table to bind subnet to. | string | - | yes |
+| rt_id | Public route table to bind subnet to. | string | - | yes |
 | tags | Additional tags. | map | `<map>` | no |
-| vpc-id | VPC identifier to create the subnet in. | string | - | yes |
+| vpc_id | VPC identifier to create the subnet in. | string | - | yes |
 
 ## Outputs
 
