@@ -16,5 +16,5 @@
 
 | Name | Description |
 |------|-------------|
-| subnet-id | Public subnet identifier. |
+| subnet_id | Public subnet identifier. |
 
