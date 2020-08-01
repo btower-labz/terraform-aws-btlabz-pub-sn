@@ -11,7 +11,3 @@ output "az" {
 output "subnet_id" {
   value = module.subnet.subnet_id
 }
-
-output "rt_id" {
-  value = module.subnet.rt_id
-}
