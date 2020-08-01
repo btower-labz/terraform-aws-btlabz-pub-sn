@@ -2,8 +2,7 @@ package main
 import input
 
 required_outputs = {
-  "rt_id",
-  "subnet_id",
+  "subnet_id"
 }
 
 deny[msg] {
@@ -20,4 +19,3 @@ deny[msg] {
     count(trim_space(value))<=0
     msg := sprintf("Required output must have a value: %v", [value])
 }
-

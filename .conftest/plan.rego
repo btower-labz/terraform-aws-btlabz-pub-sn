@@ -46,4 +46,3 @@ deny[msg] {
   count(resource_deletions) > 0
   msg := sprintf("Deletions are not allowed: %s", [resource_deletions[_]])
 }
-
