@@ -1,0 +1,17 @@
+version = 1
+
+test_patterns = [
+  "tests/*_test.go",
+  "**/*_test.go"
+]
+
+[[analyzers]]
+name = "go"
+enabled = true
+
+  [analyzers.meta]
+  import_path = "https://github.com/btower-labz/terraform-aws-btlabz-pub-sn"
+
+[[analyzers]]
+name = "test-coverage"
+enabled = false
