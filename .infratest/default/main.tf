@@ -6,7 +6,7 @@ resource "aws_vpc" "main" {
 }
 
 resource "aws_default_route_table" "main" {
-  default_route_table_id = "${aws_vpc.main.default_route_table_id}"
+  default_route_table_id = aws_vpc.main.default_route_table_id
   tags = {
     Name = "${var.name_prefix}-rt"
   }
